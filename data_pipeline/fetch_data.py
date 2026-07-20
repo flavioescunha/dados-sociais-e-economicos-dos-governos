@@ -5,6 +5,7 @@ from datetime import datetime
 
 INDICATORS = {
     'gdp_growth': 'NY.GDP.MKTP.KD.ZG',
+    'gdp_absolute': 'NY.GDP.MKTP.CD',
     'inflation': 'FP.CPI.TOTL.ZG',
     'reserves': 'FI.RES.TOTL.CD', 
     'exchange_rate': 'PA.NUS.FCRF', 

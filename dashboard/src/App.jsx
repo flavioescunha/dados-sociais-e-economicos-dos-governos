@@ -9,6 +9,7 @@ function App() {
 
   const metricSources = {
     gdp_growth: 'Fonte: Banco Mundial (World Bank) - Código: NY.GDP.MKTP.KD.ZG',
+    gdp_absolute: 'Fonte: Banco Mundial (World Bank) - Código: NY.GDP.MKTP.CD',
     inflation: 'Fonte: Banco Mundial (FMI) - Código: FP.CPI.TOTL.ZG',
     exchange_rate: 'Fonte: Banco Mundial (FMI) - Código: PA.NUS.FCRF',
     reserves: 'Fonte: Banco Mundial (FMI) - Código: FI.RES.TOTL.CD',
@@ -61,6 +62,7 @@ function App() {
             <h3>Indicadores Econômicos</h3>
             <div className="controls">
               <button className={`control-btn ${activeMetric === 'gdp_growth' ? 'active' : ''}`} onClick={() => setActiveMetric('gdp_growth')}>Crescimento PIB (%)</button>
+              <button className={`control-btn ${activeMetric === 'gdp_absolute' ? 'active' : ''}`} onClick={() => setActiveMetric('gdp_absolute')}>PIB Total (USD)</button>
               <button className={`control-btn ${activeMetric === 'inflation' ? 'active' : ''}`} onClick={() => setActiveMetric('inflation')}>Inflação (%)</button>
               <button className={`control-btn ${activeMetric === 'exchange_rate' ? 'active' : ''}`} onClick={() => setActiveMetric('exchange_rate')}>Câmbio Oficial</button>
               <button className={`control-btn ${activeMetric === 'reserves' ? 'active' : ''}`} onClick={() => setActiveMetric('reserves')}>Reservas Int. (USD)</button>

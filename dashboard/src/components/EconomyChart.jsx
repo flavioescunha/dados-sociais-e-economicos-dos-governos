@@ -53,6 +53,7 @@ const EconomyChart = ({ data, metric, country }) => {
 
   const metricConfig = {
     gdp_growth: { name: 'Crescimento do PIB', color: '#00f2fe', stroke: '#4facfe', format: '%' },
+    gdp_absolute: { name: 'PIB Total', color: '#00b09b', stroke: '#96c93d', format: 'USD' },
     inflation: { name: 'Inflação', color: '#ff0844', stroke: '#ffb199', format: '%' },
     exchange_rate: { name: 'Câmbio Oficial', color: '#2ecc71', stroke: '#27ae60', format: 'CURRENCY' },
     reserves: { name: 'Reservas Int.', color: '#f39c12', stroke: '#f1c40f', format: 'USD' },
