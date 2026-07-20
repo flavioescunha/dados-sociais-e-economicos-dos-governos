@@ -44,6 +44,18 @@ def get_president_bra(year):
     if year < 1985: return {"name": "João Figueiredo", "spectrum": "right", "color": "#2c3e50", "party": "ARENA/PDS"}
     return None
 
+def get_president_chl(year):
+    if year <= 1989: return {"name": "Augusto Pinochet", "spectrum": "far-right", "color": "#2c3e50", "party": "Military"}
+    if 1990 <= year <= 1993: return {"name": "Patricio Aylwin", "spectrum": "center", "color": "#f1c40f", "party": "PDC"}
+    if 1994 <= year <= 1999: return {"name": "Eduardo Frei Ruiz-Tagle", "spectrum": "center", "color": "#f1c40f", "party": "PDC"}
+    if 2000 <= year <= 2005: return {"name": "Ricardo Lagos", "spectrum": "center-left", "color": "#e74c3c", "party": "PPD"}
+    if 2006 <= year <= 2009: return {"name": "Michelle Bachelet", "spectrum": "center-left", "color": "#e74c3c", "party": "PS"}
+    if 2010 <= year <= 2013: return {"name": "Sebastián Piñera", "spectrum": "center-right", "color": "#3498db", "party": "RN"}
+    if 2014 <= year <= 2017: return {"name": "Michelle Bachelet", "spectrum": "center-left", "color": "#e74c3c", "party": "PS"}
+    if 2018 <= year <= 2021: return {"name": "Sebastián Piñera", "spectrum": "center-right", "color": "#3498db", "party": "RN"}
+    if year >= 2022: return {"name": "Gabriel Boric", "spectrum": "left", "color": "#c0392b", "party": "CS"}
+    return None
+
 def fetch_wb_data(country_code, indicator_code):
     url = f"http://api.worldbank.org/v2/country/{country_code}/indicator/{indicator_code}?format=json&per_page=100"
     print(f"Fetching {indicator_code} for {country_code} from {url}...")
@@ -97,6 +109,7 @@ def process_country(country_name, country_code, get_president_fn):
 def main():
     process_country("Argentina", "ARG", get_president_arg)
     process_country("Brasil", "BRA", get_president_bra)
+    process_country("Chile", "CHL", get_president_chl)
 
 if __name__ == "__main__":
     main()

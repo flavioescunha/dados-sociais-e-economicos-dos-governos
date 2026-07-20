@@ -63,6 +63,12 @@ function App() {
           >
             Brasil
           </button>
+          <button 
+            className={`control-btn ${country === 'chile' ? 'active' : ''}`} 
+            onClick={() => setCountry('chile')}
+          >
+            Chile
+          </button>
         </div>
       </header>
 
