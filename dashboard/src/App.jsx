@@ -33,6 +33,18 @@ function App() {
       });
   }, [country]);
 
+  const metricDescriptions = {
+    gdp_growth: 'Mede a variação percentual anual do Produto Interno Bruto (ritmo de crescimento ou contração da economia).',
+    gdp_absolute: 'Mede o valor total de todos os bens e serviços produzidos no país em um ano, convertido em Dólares Americanos.',
+    inflation: 'Reflete o aumento generalizado dos preços e a perda do poder de compra da moeda local ao longo de um ano.',
+    exchange_rate: 'Representa a taxa de câmbio oficial em relação ao Dólar Americano (quanto vale 1 US$ na moeda local).',
+    reserves: 'Indica o montante de moeda estrangeira acumulado pelo Banco Central, crucial para a estabilidade econômica.',
+    unemployment: 'Mostra o percentual da força de trabalho que está ativamente buscando emprego, mas não consegue encontrar.',
+    poverty: 'Percentual da população que vive com menos de US$ 6,85 por dia (linha internacional de pobreza para a região).',
+    gini: 'Mede a desigualdade de renda (de 0 a 100). Valores maiores indicam maior concentração de riqueza (desigualdade).',
+    life_expectancy: 'Média de anos de vida esperada para um recém-nascido, refletindo a qualidade geral de saúde e bem-estar.'
+  };
+
   return (
     <div className="dashboard-container">
       <header className="header">
@@ -78,6 +90,9 @@ function App() {
           </div>
 
           <div className="chart-card">
+            <div style={{ padding: '0 20px', marginBottom: '10px', color: '#c9d1d9', fontSize: '0.95em', fontStyle: 'italic', textAlign: 'center' }}>
+              ℹ️ {metricDescriptions[activeMetric]}
+            </div>
             <EconomyChart data={data} metric={activeMetric} country={country} />
             <div className="data-source">
               <p>{metricSources[activeMetric]}</p>
