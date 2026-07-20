@@ -49,6 +49,8 @@ const CustomTooltip = ({ active, payload, label, config, country }) => {
 };
 
 const EconomyChart = ({ data, metric, country }) => {
+  const [scaleType, setScaleType] = React.useState('linear');
+
   const metricConfig = {
     gdp_growth: { name: 'Crescimento do PIB', color: '#00f2fe', stroke: '#4facfe', format: '%' },
     inflation: { name: 'Inflação', color: '#ff0844', stroke: '#ffb199', format: '%' },
@@ -98,70 +100,113 @@ const EconomyChart = ({ data, metric, country }) => {
     presidentBands.push(currentBand);
   }
 
-  return (
-    <div style={{ width: '100%', height: 500 }}>
-      <ResponsiveContainer width="100%" height="100%">
-        <AreaChart
-          data={data}
-          margin={{ top: 20, right: 30, left: 20, bottom: 20 }}
-        >
-          <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.1)" />
-          
-          {/* Presidential Backgrounds */}
-          {presidentBands.map((band, i) => (
-            <ReferenceArea 
-              key={i} 
-              x1={band.start} 
-              x2={band.end} 
-              fill={band.color} 
-              fillOpacity={0.15} 
-            />
-          ))}
+  // Handle data for log scale (ensure no values <= 0 for log scale to prevent Recharts crash)
+  const chartData = scaleType === 'log' 
+    ? data.map(d => ({ ...d, [metric]: d[metric] > 0 ? d[metric] : null })) 
+    : data;
 
-          <XAxis 
-            dataKey="year" 
-            stroke="#8b949e" 
-            tick={{ fill: '#8b949e' }}
-            type="number"
-            domain={['dataMin', 'dataMax']}
-          />
-          <YAxis 
-            stroke="#8b949e" 
-            tick={{ fill: '#8b949e' }}
-            tickFormatter={(value) => {
-              if (config.format === 'USD') return `$${(value/1000000000).toFixed(0)}B`;
-              if (config.format === 'CURRENCY') {
-                if (country === 'brasil') return `R$${value}`;
-                return `$${value}`;
-              }
-              if (config.format === '%') return `${value}%`;
-              return value;
+  return (
+    <div style={{ width: '100%', display: 'flex', flexDirection: 'column' }}>
+      <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: '10px' }}>
+        <div style={{ backgroundColor: '#161b22', borderRadius: '6px', border: '1px solid #30363d', display: 'inline-flex', padding: '2px' }}>
+          <button 
+            style={{ 
+              background: scaleType === 'linear' ? '#21262d' : 'transparent', 
+              color: scaleType === 'linear' ? '#c9d1d9' : '#8b949e',
+              border: 'none', 
+              padding: '4px 12px', 
+              borderRadius: '4px',
+              cursor: 'pointer',
+              fontSize: '12px',
+              transition: 'all 0.2s'
             }}
-            domain={['auto', 'auto']}
-          />
-          
-          <Tooltip content={<CustomTooltip config={config} country={country} />} />
-          
-          <Area 
-            type="monotone" 
-            dataKey={metric} 
-            name={config.name}
-            stroke={config.stroke} 
-            strokeWidth={3}
-            fill={`url(#color${metric})`} 
-            fillOpacity={0.3}
-            activeDot={{ r: 8, fill: config.stroke, stroke: '#fff', strokeWidth: 2 }}
-            connectNulls={true}
-          />
-          
-          <defs>
-            <linearGradient id={`color${metric}`} x1="0" y1="0" x2="0" y2="1">
-              <stop offset="5%" stopColor={config.stroke} stopOpacity={0.8}/>
-              <stop offset="95%" stopColor={config.stroke} stopOpacity={0}/>
-            </linearGradient>
-          </defs>
-        </AreaChart>
-      </ResponsiveContainer>
+            onClick={() => setScaleType('linear')}
+          >
+            Linear
+          </button>
+          <button 
+            style={{ 
+              background: scaleType === 'log' ? '#21262d' : 'transparent', 
+              color: scaleType === 'log' ? '#c9d1d9' : '#8b949e',
+              border: 'none', 
+              padding: '4px 12px', 
+              borderRadius: '4px',
+              cursor: 'pointer',
+              fontSize: '12px',
+              transition: 'all 0.2s'
+            }}
+            onClick={() => setScaleType('log')}
+          >
+            Logarítmica
+          </button>
+        </div>
+      </div>
+      
+      <div style={{ width: '100%', height: 500 }}>
+        <ResponsiveContainer width="100%" height="100%">
+          <AreaChart
+            data={chartData}
+            margin={{ top: 20, right: 30, left: 20, bottom: 20 }}
+          >
+            <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.1)" />
+            
+            {/* Presidential Backgrounds */}
+            {presidentBands.map((band, i) => (
+              <ReferenceArea 
+                key={i} 
+                x1={band.start} 
+                x2={band.end} 
+                fill={band.color} 
+                fillOpacity={0.15} 
+              />
+            ))}
+
+            <XAxis 
+              dataKey="year" 
+              stroke="#8b949e" 
+              tick={{ fill: '#8b949e' }}
+              type="number"
+              domain={['dataMin', 'dataMax']}
+            />
+            <YAxis 
+              scale={scaleType}
+              stroke="#8b949e" 
+              tick={{ fill: '#8b949e' }}
+              tickFormatter={(value) => {
+                if (config.format === 'USD') return `$${(value/1000000000).toFixed(0)}B`;
+                if (config.format === 'CURRENCY') {
+                  if (country === 'brasil') return `R$${value}`;
+                  return `$${value}`;
+                }
+                if (config.format === '%') return `${value}%`;
+                return value;
+              }}
+              domain={scaleType === 'log' ? ['auto', 'auto'] : ['auto', 'auto']}
+            />
+            
+            <Tooltip content={<CustomTooltip config={config} country={country} />} />
+            
+            <Area 
+              type="monotone" 
+              dataKey={metric} 
+              name={config.name}
+              stroke={config.stroke} 
+              strokeWidth={3}
+              fill={`url(#color${metric})`} 
+              fillOpacity={0.3}
+              activeDot={{ r: 8, fill: config.stroke, stroke: '#fff', strokeWidth: 2 }}
+              connectNulls={true}
+            />
+            
+            <defs>
+              <linearGradient id={`color${metric}`} x1="0" y1="0" x2="0" y2="1">
+                <stop offset="5%" stopColor={config.stroke} stopOpacity={0.8}/>
+                <stop offset="95%" stopColor={config.stroke} stopOpacity={0}/>
+              </linearGradient>
+            </defs>
+          </AreaChart>
+        </ResponsiveContainer>
+      </div>
     </div>
   );
 };
