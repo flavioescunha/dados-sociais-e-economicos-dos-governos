@@ -11,7 +11,7 @@
     "reserves": 4561475256.47813,
     "exchange_rate": 2.49718172221135e-10,
     "unemployment": null,
-    "poverty": null,
+    "poverty": 73.9,
     "gini": 58.9,
     "life_expectancy": 63.133
   },
@@ -27,7 +27,7 @@
     "reserves": 11960814096.9956,
     "exchange_rate": 7.99741323974138e-10,
     "unemployment": null,
-    "poverty": null,
+    "poverty": 74,
     "gini": 58.3,
     "life_expectancy": 63.553
   },
@@ -43,7 +43,7 @@
     "reserves": 11617955161.6872,
     "exchange_rate": 2.68324234084592e-09,
     "unemployment": null,
-    "poverty": null,
+    "poverty": 70,
     "gini": 55.5,
     "life_expectancy": 63.98
   },
@@ -59,7 +59,7 @@
     "reserves": 8184181031.96702,
     "exchange_rate": 5.90968226749251e-09,
     "unemployment": null,
-    "poverty": null,
+    "poverty": 51.6,
     "gini": 58.4,
     "life_expectancy": 64.389
   },
@@ -75,7 +75,7 @@
     "reserves": 8134599725.9388,
     "exchange_rate": 1.6976307824584e-08,
     "unemployment": null,
-    "poverty": null,
+    "poverty": 61.3,
     "gini": 59.6,
     "life_expectancy": 64.785
   },
@@ -91,7 +91,7 @@
     "reserves": 9114472122.65344,
     "exchange_rate": 1.1354767374037e-07,
     "unemployment": null,
-    "poverty": null,
+    "poverty": 63,
     "gini": 61.4,
     "life_expectancy": 65.161
   },
@@ -107,7 +107,7 @@
     "reserves": 9678276000,
     "exchange_rate": 1.22638743473744e-06,
     "unemployment": null,
-    "poverty": null,
+    "poverty": 60.3,
     "gini": 63.2,
     "life_expectancy": 65.514
   },
@@ -123,7 +123,7 @@
     "reserves": 9997591007.59699,
     "exchange_rate": 2.95572678942699e-05,
     "unemployment": null,
-    "poverty": null,
+    "poverty": 65.8,
     "gini": 60.5,
     "life_expectancy": 65.862
   },
@@ -155,7 +155,7 @@
     "reserves": 23750647504.125,
     "exchange_rate": 0.00195302352248811,
     "unemployment": 7.086,
-    "poverty": null,
+    "poverty": 67.9,
     "gini": 53.1,
     "life_expectancy": 66.539
   },
@@ -171,7 +171,7 @@
     "reserves": 32247610989.3312,
     "exchange_rate": 0.038276610926673,
     "unemployment": 6.03,
-    "poverty": null,
+    "poverty": 66,
     "gini": 60.1,
     "life_expectancy": 66.892
   },
@@ -203,7 +203,7 @@
     "reserves": 51842389630.8018,
     "exchange_rate": 0.917666666666667,
     "unemployment": 7.092,
-    "poverty": null,
+    "poverty": 54.8,
     "gini": 59.5,
     "life_expectancy": 67.701
   },
@@ -219,7 +219,7 @@
     "reserves": 60152476087.583,
     "exchange_rate": 1.0051,
     "unemployment": 8.035,
-    "poverty": null,
+    "poverty": 54.9,
     "gini": 59.8,
     "life_expectancy": 68.108
   },
@@ -235,7 +235,7 @@
     "reserves": 52208520617.4322,
     "exchange_rate": 1.07799166666667,
     "unemployment": 9.003,
-    "poverty": null,
+    "poverty": 55.1,
     "gini": 59.8,
     "life_expectancy": 68.505
   },
@@ -251,7 +251,7 @@
     "reserves": 44487193726.0979,
     "exchange_rate": 1.16051666666667,
     "unemployment": 10.15,
-    "poverty": null,
+    "poverty": 54.3,
     "gini": 59.6,
     "life_expectancy": 68.848
   },
@@ -267,7 +267,7 @@
     "reserves": 36342324443.4703,
     "exchange_rate": 1.81393284657213,
     "unemployment": 11.125,
-    "poverty": null,
+    "poverty": 55.8,
     "gini": 59,
     "life_expectancy": 69.211
   },
@@ -299,7 +299,7 @@
     "reserves": 35866445530.2453,
     "exchange_rate": 2.34963170932244,
     "unemployment": 10.649,
-    "poverty": null,
+    "poverty": 50.3,
     "gini": 58.4,
     "life_expectancy": 69.98
   },
@@ -315,7 +315,7 @@
     "reserves": 37832146718.419,
     "exchange_rate": 2.92036301775519,
     "unemployment": 10.641,
-    "poverty": null,
+    "poverty": 49.8,
     "gini": 58.1,
     "life_expectancy": 70.396
   },
@@ -331,7 +331,7 @@
     "reserves": 49297286966.3089,
     "exchange_rate": 3.07747511847802,
     "unemployment": 11.168,
-    "poverty": null,
+    "poverty": 50.9,
     "gini": 57.6,
     "life_expectancy": 70.884
   },
@@ -347,7 +347,7 @@
     "reserves": 52934865185.6722,
     "exchange_rate": 2.92511944951586,
     "unemployment": 10.072,
-    "poverty": null,
+    "poverty": 49.5,
     "gini": 56.5,
     "life_expectancy": 71.361
   },
@@ -363,7 +363,7 @@
     "reserves": 53799284976.6775,
     "exchange_rate": 2.43439003623188,
     "unemployment": 10.551,
-    "poverty": null,
+    "poverty": 47.5,
     "gini": 56.3,
     "life_expectancy": 71.832
   },
@@ -379,7 +379,7 @@
     "reserves": 85842861115.1295,
     "exchange_rate": 2.17532666666667,
     "unemployment": 9.692,
-    "poverty": null,
+    "poverty": 43.7,
     "gini": 55.6,
     "life_expectancy": 72.296
   },
@@ -395,7 +395,7 @@
     "reserves": 180333622535.832,
     "exchange_rate": 1.94705833333333,
     "unemployment": 9.28,
-    "poverty": null,
+    "poverty": 41.2,
     "gini": 54.9,
     "life_expectancy": 72.73
   },
@@ -411,7 +411,7 @@
     "reserves": 193783363540.649,
     "exchange_rate": 1.83376666666667,
     "unemployment": 8.268,
-    "poverty": null,
+    "poverty": 38.2,
     "gini": 54,
     "life_expectancy": 73.111
   },
@@ -427,7 +427,7 @@
     "reserves": 238539464848.441,
     "exchange_rate": 1.99942817314426,
     "unemployment": 9.419,
-    "poverty": null,
+    "poverty": 36.3,
     "gini": 53.7,
     "life_expectancy": 73.457
   },
@@ -459,7 +459,7 @@
     "reserves": 352010222755.829,
     "exchange_rate": 1.67282875525659,
     "unemployment": 7.578,
-    "poverty": null,
+    "poverty": 32.2,
     "gini": 52.9,
     "life_expectancy": 74.047
   },
@@ -475,7 +475,7 @@
     "reserves": 373160977539.732,
     "exchange_rate": 1.95306861112487,
     "unemployment": 7.251,
-    "poverty": null,
+    "poverty": 30.4,
     "gini": 53.4,
     "life_expectancy": 74.335
   },
@@ -491,7 +491,7 @@
     "reserves": 358816422466.118,
     "exchange_rate": 2.15608915126311,
     "unemployment": 7.071,
-    "poverty": null,
+    "poverty": 27.9,
     "gini": 52.7,
     "life_expectancy": 74.609
   },
@@ -507,7 +507,7 @@
     "reserves": 363570226084.661,
     "exchange_rate": 2.35295196276669,
     "unemployment": 6.755,
-    "poverty": null,
+    "poverty": 26.4,
     "gini": 52.1,
     "life_expectancy": 74.823
   },
@@ -523,7 +523,7 @@
     "reserves": 356464980327.488,
     "exchange_rate": 3.32690438276879,
     "unemployment": 8.538,
-    "poverty": null,
+    "poverty": 27.4,
     "gini": 51.9,
     "life_expectancy": 75.106
   },
@@ -539,7 +539,7 @@
     "reserves": 364984039092.456,
     "exchange_rate": 3.49131342157271,
     "unemployment": 11.58,
-    "poverty": null,
+    "poverty": 29.1,
     "gini": 53.4,
     "life_expectancy": 75.081
   },
@@ -555,7 +555,7 @@
     "reserves": 373955518686.487,
     "exchange_rate": 3.19138944630048,
     "unemployment": 12.792,
-    "poverty": null,
+    "poverty": 29.3,
     "gini": 53.3,
     "life_expectancy": 75.383
   },
@@ -571,7 +571,7 @@
     "reserves": 374709673447.828,
     "exchange_rate": 3.65382536145755,
     "unemployment": 12.329,
-    "poverty": null,
+    "poverty": 28.7,
     "gini": 53.9,
     "life_expectancy": 75.633
   },
@@ -587,7 +587,7 @@
     "reserves": 356886386911.979,
     "exchange_rate": 3.9444710972507,
     "unemployment": 11.936,
-    "poverty": null,
+    "poverty": 28,
     "gini": 53.5,
     "life_expectancy": 75.809
   },
@@ -603,7 +603,7 @@
     "reserves": 355614251456.14,
     "exchange_rate": 5.15517878751281,
     "unemployment": 13.697,
-    "poverty": null,
+    "poverty": 20.8,
     "gini": 48.8,
     "life_expectancy": 74.506
   },
@@ -619,7 +619,7 @@
     "reserves": 362210079181.317,
     "exchange_rate": 5.39440078962503,
     "unemployment": 13.158,
-    "poverty": null,
+    "poverty": 30.6,
     "gini": 52.9,
     "life_expectancy": 73.038
   },
@@ -635,7 +635,7 @@
     "reserves": 324673449781.4,
     "exchange_rate": 5.16397029102111,
     "unemployment": 9.231,
-    "poverty": null,
+    "poverty": 25.3,
     "gini": 51.9,
     "life_expectancy": 74.872
   },
@@ -651,7 +651,7 @@
     "reserves": 355021395541.562,
     "exchange_rate": 4.99437976287199,
     "unemployment": 7.947,
-    "poverty": null,
+    "poverty": 23.3,
     "gini": 51.5,
     "life_expectancy": 75.848
   },
@@ -667,7 +667,7 @@
     "reserves": 329732443813.378,
     "exchange_rate": 5.3889349057096,
     "unemployment": 6.801,
-    "poverty": null,
+    "poverty": 20.6,
     "gini": 50.3,
     "life_expectancy": 76.023
   },

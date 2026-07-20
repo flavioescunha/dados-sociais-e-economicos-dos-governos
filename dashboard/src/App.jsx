@@ -14,7 +14,7 @@ function App() {
     exchange_rate: 'Fonte: Banco Mundial (FMI) - Código: PA.NUS.FCRF',
     reserves: 'Fonte: Banco Mundial (FMI) - Código: FI.RES.TOTL.CD',
     unemployment: 'Fonte: Banco Mundial (OIT) - Código: SL.UEM.TOTL.ZS',
-    poverty: 'Fonte: Banco Mundial - Código: SI.POV.NAHC',
+    poverty: 'Fonte: Banco Mundial - Código: SI.POV.UMIC (Pobreza US$ 6.85/dia)',
     gini: 'Fonte: Banco Mundial - Código: SI.POV.GINI',
     life_expectancy: 'Fonte: Banco Mundial - Código: SP.DYN.LE00.IN'
   };

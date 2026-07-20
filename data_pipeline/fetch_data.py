@@ -10,7 +10,7 @@ INDICATORS = {
     'reserves': 'FI.RES.TOTL.CD', 
     'exchange_rate': 'PA.NUS.FCRF', 
     'unemployment': 'SL.UEM.TOTL.ZS',
-    'poverty': 'SI.POV.NAHC',
+    'poverty': 'SI.POV.UMIC',
     'gini': 'SI.POV.GINI',
     'life_expectancy': 'SP.DYN.LE00.IN'
 }
