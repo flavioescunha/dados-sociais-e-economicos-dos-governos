@@ -20,7 +20,7 @@ function App() {
 
   useEffect(() => {
     setLoading(true);
-    fetch(`/${country}_data.json`)
+    fetch(`${import.meta.env.BASE_URL}${country}_data.json`)
       .then(res => res.json())
       .then(json => {
         setData(json);
