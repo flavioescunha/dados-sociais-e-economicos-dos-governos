@@ -43,24 +43,24 @@ function App() {
   }, [country]);
 
   const metricDescriptions = {
-    gdp_growth: 'Mede a variação percentual anual do Produto Interno Bruto (ritmo de crescimento ou contração da economia).',
-    gdp_absolute: 'Mede o valor total de todos os bens e serviços produzidos no país em um ano, convertido em Dólares Americanos.',
-    inflation: 'Reflete o aumento generalizado dos preços e a perda do poder de compra da moeda local ao longo de um ano.',
+    gdp_growth: 'Mede a variação percentual anual do Produto Interno Bruto (ritmo de crescimento ou contração da economia). (Quanto maior, melhor)',
+    gdp_absolute: 'Mede o valor total de todos os bens e serviços produzidos no país em um ano, convertido em Dólares Americanos. (Quanto maior, melhor)',
+    inflation: 'Reflete o aumento generalizado dos preços e a perda do poder de compra da moeda local ao longo de um ano. (Quanto menor, melhor)',
     exchange_rate: 'Representa a taxa de câmbio oficial em relação ao Dólar Americano (quanto vale 1 US$ na moeda local).',
-    reserves: 'Indica o montante de moeda estrangeira acumulado pelo Banco Central, crucial para a estabilidade econômica.',
-    unemployment: 'Mostra o percentual da força de trabalho que está ativamente buscando emprego, mas não consegue encontrar.',
-    poverty: 'Percentual da população que vive com menos de US$ 6,85 por dia (linha internacional de pobreza para a região).',
-    gini: 'Mede a desigualdade de renda (de 0 a 100). Valores maiores indicam maior concentração de riqueza (desigualdade).',
-    life_expectancy: 'Média de anos de vida esperada para um recém-nascido, refletindo a qualidade geral de saúde e bem-estar.',
-    homicide: 'Taxa de homicídios intencionais por 100 mil habitantes. Padrão ouro para medir violência extrema devido à baixíssima subnotificação.',
-    neet: 'Taxa de Jovens "Nem-Nem" (15 a 24 anos) que não estudam, não trabalham e não estão em treinamento.',
-    lays: 'Anos de Escolaridade Ajustados pela Aprendizagem (LAYS). Combina o tempo gasto na escola com a qualidade do aprendizado.',
-    gcb: 'Barômetro Global da Corrupção (GCB). Porcentagem de pessoas que relatam experiência direta de pagamento de propinas.',
-    ocp: 'Open Contracting Partnership. Analisa contratos públicos para identificar "bandeiras vermelhas" (ex: licitações de concorrente único).',
-    obi: 'Open Budget Index (OBI). Mede a transparência, participação do público e rigor na fiscalização do orçamento governamental.',
-    car_theft: 'Taxa de roubo e furto de veículos. Melhor termômetro para crimes patrimoniais dada a notificação para o seguro ser quase 100%.',
-    gpi: 'Índice Global da Paz. Combina múltiplos indicadores desde taxa de encarceramento até percepção de segurança.',
-    pisa: 'PISA (Programa Internacional de Avaliação de Estudantes). Mede competências de alunos de 15 anos em leitura, matemática e ciências.'
+    reserves: 'Indica o montante de moeda estrangeira acumulado pelo Banco Central, crucial para a estabilidade econômica. (Quanto maior, melhor)',
+    unemployment: 'Mostra o percentual da força de trabalho que está ativamente buscando emprego, mas não consegue encontrar. (Quanto menor, melhor)',
+    poverty: 'Percentual da população que vive com menos de US$ 6,85 por dia (linha internacional de pobreza para a região). (Quanto menor, melhor)',
+    gini: 'Mede a desigualdade de renda (de 0 a 100). Valores maiores indicam maior concentração de riqueza (desigualdade). (Quanto menor, melhor)',
+    life_expectancy: 'Média de anos de vida esperada para um recém-nascido, refletindo a qualidade geral de saúde e bem-estar. (Quanto maior, melhor)',
+    homicide: 'Taxa de homicídios intencionais por 100 mil habitantes. Padrão ouro para medir violência extrema devido à baixíssima subnotificação. (Quanto menor, melhor)',
+    neet: 'Taxa de Jovens "Nem-Nem" (15 a 24 anos) que não estudam, não trabalham e não estão em treinamento. (Quanto menor, melhor)',
+    lays: 'Anos de Escolaridade Ajustados pela Aprendizagem (LAYS). Combina o tempo gasto na escola com a qualidade do aprendizado. (Quanto maior, melhor)',
+    gcb: 'Barômetro Global da Corrupção (GCB). Porcentagem de pessoas que relatam experiência direta de pagamento de propinas. (Quanto menor, melhor)',
+    ocp: 'Open Contracting Partnership. Analisa contratos públicos para identificar "bandeiras vermelhas" (ex: licitações de concorrente único). (Quanto menor, melhor)',
+    obi: 'Open Budget Index (OBI). Mede a transparência, participação do público e rigor na fiscalização do orçamento governamental. (Quanto maior, melhor)',
+    car_theft: 'Taxa de roubo e furto de veículos. Melhor termômetro para crimes patrimoniais dada a notificação para o seguro ser quase 100%. (Quanto menor, melhor)',
+    gpi: 'Índice Global da Paz. Combina múltiplos indicadores desde taxa de encarceramento até percepção de segurança. (Quanto menor, melhor)',
+    pisa: 'PISA (Programa Internacional de Avaliação de Estudantes). Mede competências de alunos de 15 anos em leitura, matemática e ciências. (Quanto maior, melhor)'
   };
 
   return (
