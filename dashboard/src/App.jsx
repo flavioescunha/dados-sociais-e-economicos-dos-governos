@@ -22,7 +22,7 @@ function App() {
     lays: 'Fonte: Banco Mundial - Código: HD.HCI.LAYS',
     gcb: 'Fonte: Transparência Internacional (Global Corruption Barometer)',
     ocp: 'Fonte: Open Contracting Partnership',
-    pets: 'Fonte: Banco Mundial (PETS)',
+    obi: 'Fonte: International Budget Partnership (Open Budget Index)',
     car_theft: 'Fonte: Secretarias Estaduais de Segurança Pública',
     gpi: 'Fonte: Institute for Economics & Peace',
     pisa: 'Fonte: OCDE (PISA)'
@@ -57,7 +57,7 @@ function App() {
     lays: 'Anos de Escolaridade Ajustados pela Aprendizagem (LAYS). Combina o tempo gasto na escola com a qualidade do aprendizado.',
     gcb: 'Barômetro Global da Corrupção (GCB). Porcentagem de pessoas que relatam experiência direta de pagamento de propinas.',
     ocp: 'Open Contracting Partnership. Analisa contratos públicos para identificar "bandeiras vermelhas" (ex: licitações de concorrente único).',
-    pets: 'Rastreamento de Despesas Públicas (PETS). Mede a diferença contábil entre a verba enviada e a efetivamente recebida na ponta.',
+    obi: 'Open Budget Index (OBI). Mede a transparência, participação do público e rigor na fiscalização do orçamento governamental.',
     car_theft: 'Taxa de roubo e furto de veículos. Melhor termômetro para crimes patrimoniais dada a notificação para o seguro ser quase 100%.',
     gpi: 'Índice Global da Paz. Combina múltiplos indicadores desde taxa de encarceramento até percepção de segurança.',
     pisa: 'PISA (Programa Internacional de Avaliação de Estudantes). Mede competências de alunos de 15 anos em leitura, matemática e ciências.'
@@ -126,7 +126,7 @@ function App() {
               <button className={`control-btn ${activeMetric === 'gpi' ? 'active' : ''}`} onClick={() => setActiveMetric('gpi')}>Global Peace Index</button>
               <button className={`control-btn ${activeMetric === 'gcb' ? 'active' : ''}`} onClick={() => setActiveMetric('gcb')}>GCB (Vitimização)</button>
               <button className={`control-btn ${activeMetric === 'ocp' ? 'active' : ''}`} onClick={() => setActiveMetric('ocp')}>OCP (Red Flags)</button>
-              <button className={`control-btn ${activeMetric === 'pets' ? 'active' : ''}`} onClick={() => setActiveMetric('pets')}>PETS (Vazamento)</button>
+              <button className={`control-btn ${activeMetric === 'obi' ? 'active' : ''}`} onClick={() => setActiveMetric('obi')}>Open Budget Index</button>
             </div>
           </div>
 

@@ -18,7 +18,7 @@ INDICATORS = {
     'lays': 'HD.HCI.LAYS',
     'gcb': 'DUMMY_GCB',
     'ocp': 'DUMMY_OCP',
-    'pets': 'DUMMY_PETS',
+    'obi': 'DUMMY_OBI',
     'car_theft': 'DUMMY_CAR_THEFT',
     'gpi': 'DUMMY_GPI',
     'pisa': 'LO.PISA.MAT'
@@ -65,6 +65,13 @@ def get_president_chl(year):
     if year >= 2022: return {"name": "Gabriel Boric", "spectrum": "left", "color": "#c0392b", "party": "CS"}
     return None
 
+def load_local_data():
+    local_path = os.path.join(os.path.dirname(__file__), 'raw_data', 'local_indicators.json')
+    if os.path.exists(local_path):
+        with open(local_path, 'r', encoding='utf-8') as f:
+            return json.load(f)
+    return {}
+
 def fetch_wb_data(country_code, indicator_code):
     url = f"http://api.worldbank.org/v2/country/{country_code}/indicator/{indicator_code}?format=json&per_page=100"
     print(f"Fetching {indicator_code} for {country_code} from {url}...")
@@ -98,9 +105,16 @@ def process_country(country_name, country_code, get_president_fn):
     for key, code in INDICATORS.items():
         fetched_data[key] = fetch_wb_data(country_code, code)
     
+    local_dataset = load_local_data()
+    country_local_data = local_dataset.get(country_code, {})
+
     for year in range(START_YEAR, END_YEAR + 1):
         for key in INDICATORS.keys():
-            if year in fetched_data[key]:
+            # Apply local data if it exists for this key, otherwise use WB data
+            local_val = country_local_data.get(key, {}).get(str(year))
+            if local_val is not None:
+                data_by_year[year][key] = local_val
+            elif year in fetched_data[key]:
                 data_by_year[year][key] = fetched_data[key][year]
             
         president = get_president_fn(year)
