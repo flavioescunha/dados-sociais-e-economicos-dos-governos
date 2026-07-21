@@ -21,7 +21,7 @@ INDICATORS = {
     'pets': 'DUMMY_PETS',
     'car_theft': 'DUMMY_CAR_THEFT',
     'gpi': 'DUMMY_GPI',
-    'pisa': 'DUMMY_PISA'
+    'pisa': 'LO.PISA.MAT'
 }
 
 START_YEAR = 1983
@@ -68,12 +68,15 @@ def get_president_chl(year):
 def fetch_wb_data(country_code, indicator_code):
     url = f"http://api.worldbank.org/v2/country/{country_code}/indicator/{indicator_code}?format=json&per_page=100"
     print(f"Fetching {indicator_code} for {country_code} from {url}...")
-    response = requests.get(url)
-    if response.status_code == 200:
-        data = response.json()
-        if len(data) > 1:
-            records = data[1]
-            return {int(r['date']): r['value'] for r in records if r['value'] is not None}
+    try:
+        response = requests.get(url, timeout=10)
+        if response.status_code == 200:
+            data = response.json()
+            if len(data) > 1:
+                records = data[1]
+                return {int(r['date']): r['value'] for r in records if r['value'] is not None}
+    except Exception as e:
+        print(f"Error fetching {indicator_code}: {e}")
     return {}
 
 def process_country(country_name, country_code, get_president_fn):

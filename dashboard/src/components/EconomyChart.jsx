@@ -115,6 +115,8 @@ const EconomyChart = ({ data, metric, country }) => {
     ? data.map(d => ({ ...d, [metric]: d[metric] > 0 ? d[metric] : null })) 
     : data;
 
+  const hasData = chartData.some(d => d[metric] !== null && d[metric] !== undefined);
+
   return (
     <div style={{ width: '100%', display: 'flex', flexDirection: 'column' }}>
       <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: '10px' }}>
@@ -152,7 +154,18 @@ const EconomyChart = ({ data, metric, country }) => {
         </div>
       </div>
       
-      <div style={{ width: '100%', height: 500 }}>
+      <div style={{ width: '100%', height: 500, position: 'relative' }}>
+        {!hasData && (
+          <div style={{
+            position: 'absolute', top: 0, left: 0, right: 0, bottom: 0,
+            display: 'flex', alignItems: 'center', justifyContent: 'center',
+            color: '#8b949e', fontSize: '18px', zIndex: 10,
+            backgroundColor: 'rgba(13, 17, 23, 0.7)',
+            borderRadius: '8px'
+          }}>
+            Nenhum dado disponível para este país/indicador.
+          </div>
+        )}
         <ResponsiveContainer width="100%" height="100%">
           <AreaChart
             data={chartData}
