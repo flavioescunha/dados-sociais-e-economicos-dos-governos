@@ -13,7 +13,16 @@
     "unemployment": null,
     "poverty": null,
     "gini": null,
-    "life_expectancy": 70.83
+    "life_expectancy": 70.83,
+    "homicide": null,
+    "neet": null,
+    "lays": null,
+    "gcb": null,
+    "ocp": null,
+    "pets": null,
+    "car_theft": null,
+    "gpi": null,
+    "pisa": null
   },
   {
     "year": 1984,
@@ -29,7 +38,16 @@
     "unemployment": null,
     "poverty": null,
     "gini": null,
-    "life_expectancy": 71.215
+    "life_expectancy": 71.215,
+    "homicide": null,
+    "neet": null,
+    "lays": null,
+    "gcb": null,
+    "ocp": null,
+    "pets": null,
+    "car_theft": null,
+    "gpi": null,
+    "pisa": null
   },
   {
     "year": 1985,
@@ -45,7 +63,16 @@
     "unemployment": null,
     "poverty": null,
     "gini": null,
-    "life_expectancy": 71.615
+    "life_expectancy": 71.615,
+    "homicide": null,
+    "neet": null,
+    "lays": null,
+    "gcb": null,
+    "ocp": null,
+    "pets": null,
+    "car_theft": null,
+    "gpi": null,
+    "pisa": null
   },
   {
     "year": 1986,
@@ -61,7 +88,16 @@
     "unemployment": null,
     "poverty": null,
     "gini": null,
-    "life_expectancy": 72.061
+    "life_expectancy": 72.061,
+    "homicide": null,
+    "neet": null,
+    "lays": null,
+    "gcb": null,
+    "ocp": null,
+    "pets": null,
+    "car_theft": null,
+    "gpi": null,
+    "pisa": null
   },
   {
     "year": 1987,
@@ -77,7 +113,16 @@
     "unemployment": null,
     "poverty": 64.4,
     "gini": 56.2,
-    "life_expectancy": 72.466
+    "life_expectancy": 72.466,
+    "homicide": null,
+    "neet": null,
+    "lays": null,
+    "gcb": null,
+    "ocp": null,
+    "pets": null,
+    "car_theft": null,
+    "gpi": null,
+    "pisa": null
   },
   {
     "year": 1988,
@@ -93,7 +138,16 @@
     "unemployment": null,
     "poverty": null,
     "gini": null,
-    "life_expectancy": 72.788
+    "life_expectancy": 72.788,
+    "homicide": null,
+    "neet": null,
+    "lays": null,
+    "gcb": null,
+    "ocp": null,
+    "pets": null,
+    "car_theft": null,
+    "gpi": null,
+    "pisa": null
   },
   {
     "year": 1989,
@@ -109,7 +163,16 @@
     "unemployment": null,
     "poverty": null,
     "gini": null,
-    "life_expectancy": 73.188
+    "life_expectancy": 73.188,
+    "homicide": null,
+    "neet": null,
+    "lays": null,
+    "gcb": null,
+    "ocp": null,
+    "pets": null,
+    "car_theft": null,
+    "gpi": null,
+    "pisa": null
   },
   {
     "year": 1990,
@@ -125,7 +188,16 @@
     "unemployment": null,
     "poverty": 58.5,
     "gini": 57.2,
-    "life_expectancy": 73.675
+    "life_expectancy": 73.675,
+    "homicide": null,
+    "neet": 28.135,
+    "lays": null,
+    "gcb": null,
+    "ocp": null,
+    "pets": null,
+    "car_theft": null,
+    "gpi": null,
+    "pisa": null
   },
   {
     "year": 1991,
@@ -141,7 +213,16 @@
     "unemployment": 5.23,
     "poverty": null,
     "gini": null,
-    "life_expectancy": 74.082
+    "life_expectancy": 74.082,
+    "homicide": null,
+    "neet": null,
+    "lays": null,
+    "gcb": null,
+    "ocp": null,
+    "pets": null,
+    "car_theft": null,
+    "gpi": null,
+    "pisa": null
   },
   {
     "year": 1992,
@@ -157,7 +238,16 @@
     "unemployment": 4.35,
     "poverty": 53.3,
     "gini": 54.8,
-    "life_expectancy": 74.367
+    "life_expectancy": 74.367,
+    "homicide": null,
+    "neet": 24.094,
+    "lays": null,
+    "gcb": null,
+    "ocp": null,
+    "pets": null,
+    "car_theft": null,
+    "gpi": null,
+    "pisa": null
   },
   {
     "year": 1993,
@@ -173,7 +263,16 @@
     "unemployment": 4.49,
     "poverty": null,
     "gini": null,
-    "life_expectancy": 74.679
+    "life_expectancy": 74.679,
+    "homicide": null,
+    "neet": null,
+    "lays": null,
+    "gcb": null,
+    "ocp": null,
+    "pets": null,
+    "car_theft": null,
+    "gpi": null,
+    "pisa": null
   },
   {
     "year": 1994,
@@ -189,7 +288,16 @@
     "unemployment": 5.87,
     "poverty": 49.8,
     "gini": 56.4,
-    "life_expectancy": 74.973
+    "life_expectancy": 74.973,
+    "homicide": null,
+    "neet": 24.569,
+    "lays": null,
+    "gcb": null,
+    "ocp": null,
+    "pets": null,
+    "car_theft": null,
+    "gpi": null,
+    "pisa": null
   },
   {
     "year": 1995,
@@ -205,7 +313,16 @@
     "unemployment": 4.7,
     "poverty": null,
     "gini": null,
-    "life_expectancy": 75.298
+    "life_expectancy": 75.298,
+    "homicide": null,
+    "neet": null,
+    "lays": null,
+    "gcb": null,
+    "ocp": null,
+    "pets": null,
+    "car_theft": null,
+    "gpi": null,
+    "pisa": null
   },
   {
     "year": 1996,
@@ -221,7 +338,16 @@
     "unemployment": 7.414,
     "poverty": 44.6,
     "gini": 54.9,
-    "life_expectancy": 75.555
+    "life_expectancy": 75.555,
+    "homicide": null,
+    "neet": 20.834,
+    "lays": null,
+    "gcb": null,
+    "ocp": null,
+    "pets": null,
+    "car_theft": null,
+    "gpi": null,
+    "pisa": null
   },
   {
     "year": 1997,
@@ -237,7 +363,16 @@
     "unemployment": 7.136,
     "poverty": null,
     "gini": null,
-    "life_expectancy": 75.826
+    "life_expectancy": 75.826,
+    "homicide": null,
+    "neet": null,
+    "lays": null,
+    "gcb": null,
+    "ocp": null,
+    "pets": null,
+    "car_theft": null,
+    "gpi": null,
+    "pisa": null
   },
   {
     "year": 1998,
@@ -253,7 +388,16 @@
     "unemployment": 7.307,
     "poverty": 41.6,
     "gini": 55.5,
-    "life_expectancy": 76.324
+    "life_expectancy": 76.324,
+    "homicide": null,
+    "neet": 23.256,
+    "lays": null,
+    "gcb": null,
+    "ocp": null,
+    "pets": null,
+    "car_theft": null,
+    "gpi": null,
+    "pisa": null
   },
   {
     "year": 1999,
@@ -269,7 +413,16 @@
     "unemployment": 11.158,
     "poverty": null,
     "gini": null,
-    "life_expectancy": 76.738
+    "life_expectancy": 76.738,
+    "homicide": null,
+    "neet": null,
+    "lays": null,
+    "gcb": null,
+    "ocp": null,
+    "pets": null,
+    "car_theft": null,
+    "gpi": null,
+    "pisa": null
   },
   {
     "year": 2000,
@@ -285,7 +438,16 @@
     "unemployment": 10.491,
     "poverty": 44.5,
     "gini": 52.8,
-    "life_expectancy": 77.128
+    "life_expectancy": 77.128,
+    "homicide": null,
+    "neet": 24.029,
+    "lays": null,
+    "gcb": null,
+    "ocp": null,
+    "pets": null,
+    "car_theft": null,
+    "gpi": null,
+    "pisa": null
   },
   {
     "year": 2001,
@@ -301,7 +463,16 @@
     "unemployment": 10.39,
     "poverty": null,
     "gini": null,
-    "life_expectancy": 77.58
+    "life_expectancy": 77.58,
+    "homicide": null,
+    "neet": null,
+    "lays": null,
+    "gcb": null,
+    "ocp": null,
+    "pets": null,
+    "car_theft": null,
+    "gpi": null,
+    "pisa": null
   },
   {
     "year": 2002,
@@ -317,7 +488,16 @@
     "unemployment": 10.168,
     "poverty": null,
     "gini": null,
-    "life_expectancy": 77.84
+    "life_expectancy": 77.84,
+    "homicide": null,
+    "neet": null,
+    "lays": null,
+    "gcb": null,
+    "ocp": null,
+    "pets": null,
+    "car_theft": null,
+    "gpi": null,
+    "pisa": null
   },
   {
     "year": 2003,
@@ -333,7 +513,16 @@
     "unemployment": 9.765,
     "poverty": 43.2,
     "gini": 51.5,
-    "life_expectancy": 77.884
+    "life_expectancy": 77.884,
+    "homicide": 3.20129769251024,
+    "neet": 20.542,
+    "lays": null,
+    "gcb": null,
+    "ocp": null,
+    "pets": null,
+    "car_theft": null,
+    "gpi": null,
+    "pisa": null
   },
   {
     "year": 2004,
@@ -349,7 +538,16 @@
     "unemployment": 10.162,
     "poverty": null,
     "gini": null,
-    "life_expectancy": 78.276
+    "life_expectancy": 78.276,
+    "homicide": null,
+    "neet": null,
+    "lays": null,
+    "gcb": null,
+    "ocp": null,
+    "pets": null,
+    "car_theft": null,
+    "gpi": null,
+    "pisa": null
   },
   {
     "year": 2005,
@@ -365,7 +563,16 @@
     "unemployment": 9.34,
     "poverty": null,
     "gini": null,
-    "life_expectancy": 78.459
+    "life_expectancy": 78.459,
+    "homicide": 3.52319921168418,
+    "neet": null,
+    "lays": null,
+    "gcb": null,
+    "ocp": null,
+    "pets": null,
+    "car_theft": null,
+    "gpi": null,
+    "pisa": null
   },
   {
     "year": 2006,
@@ -381,7 +588,16 @@
     "unemployment": 9.024,
     "poverty": 32,
     "gini": 47.7,
-    "life_expectancy": 78.533
+    "life_expectancy": 78.533,
+    "homicide": 3.57376612166027,
+    "neet": 19.888,
+    "lays": null,
+    "gcb": null,
+    "ocp": null,
+    "pets": null,
+    "car_theft": null,
+    "gpi": null,
+    "pisa": null
   },
   {
     "year": 2007,
@@ -397,7 +613,16 @@
     "unemployment": 8.427,
     "poverty": null,
     "gini": null,
-    "life_expectancy": 78.652
+    "life_expectancy": 78.652,
+    "homicide": 3.6949106294991,
+    "neet": null,
+    "lays": null,
+    "gcb": null,
+    "ocp": null,
+    "pets": null,
+    "car_theft": null,
+    "gpi": null,
+    "pisa": null
   },
   {
     "year": 2008,
@@ -413,7 +638,16 @@
     "unemployment": 9.285,
     "poverty": null,
     "gini": null,
-    "life_expectancy": 78.752
+    "life_expectancy": 78.752,
+    "homicide": 3.4918963063576,
+    "neet": null,
+    "lays": null,
+    "gcb": null,
+    "ocp": null,
+    "pets": null,
+    "car_theft": null,
+    "gpi": null,
+    "pisa": null
   },
   {
     "year": 2009,
@@ -429,7 +663,16 @@
     "unemployment": 11.313,
     "poverty": 27.6,
     "gini": 47.4,
-    "life_expectancy": 78.89
+    "life_expectancy": 78.89,
+    "homicide": 3.70376238471268,
+    "neet": 23.202,
+    "lays": null,
+    "gcb": null,
+    "ocp": null,
+    "pets": null,
+    "car_theft": null,
+    "gpi": null,
+    "pisa": null
   },
   {
     "year": 2010,
@@ -445,7 +688,16 @@
     "unemployment": 8.547,
     "poverty": null,
     "gini": null,
-    "life_expectancy": 79.095
+    "life_expectancy": 79.095,
+    "homicide": 3.14874215608169,
+    "neet": 19.536,
+    "lays": 9.0210657119751,
+    "gcb": null,
+    "ocp": null,
+    "pets": null,
+    "car_theft": null,
+    "gpi": null,
+    "pisa": null
   },
   {
     "year": 2011,
@@ -461,7 +713,16 @@
     "unemployment": 7.492,
     "poverty": 23.5,
     "gini": 46.9,
-    "life_expectancy": 79.236
+    "life_expectancy": 79.236,
+    "homicide": 3.66532251337043,
+    "neet": 19.176,
+    "lays": null,
+    "gcb": null,
+    "ocp": null,
+    "pets": null,
+    "car_theft": null,
+    "gpi": null,
+    "pisa": null
   },
   {
     "year": 2012,
@@ -477,7 +738,16 @@
     "unemployment": 6.79,
     "poverty": null,
     "gini": null,
-    "life_expectancy": 79.221
+    "life_expectancy": 79.221,
+    "homicide": 2.47729352143792,
+    "neet": 18.046,
+    "lays": null,
+    "gcb": null,
+    "ocp": null,
+    "pets": null,
+    "car_theft": null,
+    "gpi": null,
+    "pisa": null
   },
   {
     "year": 2013,
@@ -493,7 +763,16 @@
     "unemployment": 6.361,
     "poverty": 14.4,
     "gini": 46.8,
-    "life_expectancy": 79.551
+    "life_expectancy": 79.551,
+    "homicide": 3.14355060592079,
+    "neet": 18.413,
+    "lays": null,
+    "gcb": null,
+    "ocp": null,
+    "pets": null,
+    "car_theft": null,
+    "gpi": null,
+    "pisa": null
   },
   {
     "year": 2014,
@@ -509,7 +788,16 @@
     "unemployment": 6.761,
     "poverty": null,
     "gini": null,
-    "life_expectancy": 79.714
+    "life_expectancy": 79.714,
+    "homicide": 2.4518317226161,
+    "neet": 18.96,
+    "lays": null,
+    "gcb": null,
+    "ocp": null,
+    "pets": null,
+    "car_theft": null,
+    "gpi": null,
+    "pisa": null
   },
   {
     "year": 2015,
@@ -525,7 +813,16 @@
     "unemployment": 6.605,
     "poverty": 11.7,
     "gini": 45.3,
-    "life_expectancy": 80.008
+    "life_expectancy": 80.008,
+    "homicide": 2.32163505387454,
+    "neet": 19.198,
+    "lays": null,
+    "gcb": null,
+    "ocp": null,
+    "pets": null,
+    "car_theft": null,
+    "gpi": null,
+    "pisa": null
   },
   {
     "year": 2016,
@@ -541,7 +838,16 @@
     "unemployment": 6.926,
     "poverty": null,
     "gini": null,
-    "life_expectancy": 80.295
+    "life_expectancy": 80.295,
+    "homicide": 3.39405749254204,
+    "neet": 17.502,
+    "lays": null,
+    "gcb": null,
+    "ocp": null,
+    "pets": null,
+    "car_theft": null,
+    "gpi": null,
+    "pisa": null
   },
   {
     "year": 2017,
@@ -557,7 +863,16 @@
     "unemployment": 7.257,
     "poverty": 9,
     "gini": 45.3,
-    "life_expectancy": 80.61
+    "life_expectancy": 80.61,
+    "homicide": 4.19745439747334,
+    "neet": 18.277,
+    "lays": 9.57,
+    "gcb": null,
+    "ocp": null,
+    "pets": null,
+    "car_theft": null,
+    "gpi": null,
+    "pisa": null
   },
   {
     "year": 2018,
@@ -573,7 +888,16 @@
     "unemployment": 7.623,
     "poverty": null,
     "gini": null,
-    "life_expectancy": 80.559
+    "life_expectancy": 80.559,
+    "homicide": 4.36665251518391,
+    "neet": null,
+    "lays": 9.68881225585938,
+    "gcb": null,
+    "ocp": null,
+    "pets": null,
+    "car_theft": null,
+    "gpi": null,
+    "pisa": null
   },
   {
     "year": 2019,
@@ -589,7 +913,16 @@
     "unemployment": 7.493,
     "poverty": null,
     "gini": null,
-    "life_expectancy": 80.324
+    "life_expectancy": 80.324,
+    "homicide": 4.81306553520039,
+    "neet": null,
+    "lays": null,
+    "gcb": null,
+    "ocp": null,
+    "pets": null,
+    "car_theft": null,
+    "gpi": null,
+    "pisa": null
   },
   {
     "year": 2020,
@@ -605,7 +938,16 @@
     "unemployment": 10.934,
     "poverty": 11.3,
     "gini": 47,
-    "life_expectancy": 79.349
+    "life_expectancy": 79.349,
+    "homicide": 5.75613878004137,
+    "neet": 19.222,
+    "lays": 9.40742969512939,
+    "gcb": null,
+    "ocp": null,
+    "pets": null,
+    "car_theft": null,
+    "gpi": null,
+    "pisa": null
   },
   {
     "year": 2021,
@@ -621,7 +963,16 @@
     "unemployment": 9.281,
     "poverty": null,
     "gini": null,
-    "life_expectancy": 78.876
+    "life_expectancy": 78.876,
+    "homicide": 4.65658124495601,
+    "neet": 15.335,
+    "lays": null,
+    "gcb": null,
+    "ocp": null,
+    "pets": null,
+    "car_theft": null,
+    "gpi": null,
+    "pisa": null
   },
   {
     "year": 2022,
@@ -637,7 +988,16 @@
     "unemployment": 8.249,
     "poverty": 6.1,
     "gini": 43.2,
-    "life_expectancy": 79.176
+    "life_expectancy": 79.176,
+    "homicide": 6.80201256720408,
+    "neet": 14.42,
+    "lays": null,
+    "gcb": null,
+    "ocp": null,
+    "pets": null,
+    "car_theft": null,
+    "gpi": null,
+    "pisa": null
   },
   {
     "year": 2023,
@@ -653,7 +1013,16 @@
     "unemployment": 9.013,
     "poverty": null,
     "gini": null,
-    "life_expectancy": 81.167
+    "life_expectancy": 81.167,
+    "homicide": 6.34829073035101,
+    "neet": 15.321,
+    "lays": null,
+    "gcb": null,
+    "ocp": null,
+    "pets": null,
+    "car_theft": null,
+    "gpi": null,
+    "pisa": null
   },
   {
     "year": 2024,
@@ -669,7 +1038,16 @@
     "unemployment": 8.718,
     "poverty": 4.5,
     "gini": 43,
-    "life_expectancy": 81.359
+    "life_expectancy": 81.359,
+    "homicide": null,
+    "neet": 13.759,
+    "lays": null,
+    "gcb": null,
+    "ocp": null,
+    "pets": null,
+    "car_theft": null,
+    "gpi": null,
+    "pisa": null
   },
   {
     "year": 2025,
@@ -685,7 +1063,16 @@
     "unemployment": 8.974,
     "poverty": null,
     "gini": null,
-    "life_expectancy": null
+    "life_expectancy": null,
+    "homicide": null,
+    "neet": 13.435,
+    "lays": null,
+    "gcb": null,
+    "ocp": null,
+    "pets": null,
+    "car_theft": null,
+    "gpi": null,
+    "pisa": null
   },
   {
     "year": 2026,
@@ -701,6 +1088,15 @@
     "unemployment": null,
     "poverty": null,
     "gini": null,
-    "life_expectancy": null
+    "life_expectancy": null,
+    "homicide": null,
+    "neet": null,
+    "lays": null,
+    "gcb": null,
+    "ocp": null,
+    "pets": null,
+    "car_theft": null,
+    "gpi": null,
+    "pisa": null
   }
 ]
