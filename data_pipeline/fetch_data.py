@@ -12,7 +12,16 @@ INDICATORS = {
     'unemployment': 'SL.UEM.TOTL.ZS',
     'poverty': 'SI.POV.UMIC',
     'gini': 'SI.POV.GINI',
-    'life_expectancy': 'SP.DYN.LE00.IN'
+    'life_expectancy': 'SP.DYN.LE00.IN',
+    'homicide': 'VC.IHR.PSRC.P5',
+    'neet': 'SL.UEM.NEET.ZS',
+    'lays': 'HD.HCI.LAYS',
+    'gcb': 'DUMMY_GCB',
+    'ocp': 'DUMMY_OCP',
+    'pets': 'DUMMY_PETS',
+    'car_theft': 'DUMMY_CAR_THEFT',
+    'gpi': 'DUMMY_GPI',
+    'pisa': 'DUMMY_PISA'
 }
 
 START_YEAR = 1983
