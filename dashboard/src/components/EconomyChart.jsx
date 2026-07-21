@@ -60,7 +60,16 @@ const EconomyChart = ({ data, metric, country }) => {
     unemployment: { name: 'Desemprego', color: '#f6d365', stroke: '#fda085', format: '%' },
     poverty: { name: 'Taxa de Pobreza', color: '#e74c3c', stroke: '#c0392b', format: '%' },
     gini: { name: 'Índice Gini', color: '#9b59b6', stroke: '#8e44ad', format: '' },
-    life_expectancy: { name: 'Expectativa de Vida', color: '#1abc9c', stroke: '#16a085', format: 'Anos' }
+    life_expectancy: { name: 'Expectativa de Vida', color: '#1abc9c', stroke: '#16a085', format: 'Anos' },
+    homicide: { name: 'Taxa de Homicídios', color: '#e74c3c', stroke: '#c0392b', format: '' },
+    neet: { name: 'Taxa Nem-Nem', color: '#f39c12', stroke: '#f1c40f', format: '%' },
+    lays: { name: 'Anos Ajustados (LAYS)', color: '#3498db', stroke: '#2980b9', format: 'Anos' },
+    gcb: { name: 'Vitimização (GCB)', color: '#9b59b6', stroke: '#8e44ad', format: '%' },
+    ocp: { name: 'Risco OCP', color: '#34495e', stroke: '#2c3e50', format: '' },
+    pets: { name: 'Vazamento (PETS)', color: '#d35400', stroke: '#e67e22', format: '%' },
+    car_theft: { name: 'Roubo de Veículos', color: '#3498db', stroke: '#2980b9', format: '' },
+    gpi: { name: 'Global Peace Index', color: '#16a085', stroke: '#1abc9c', format: '' },
+    pisa: { name: 'PISA', color: '#8e44ad', stroke: '#9b59b6', format: '' }
   };
 
   const config = metricConfig[metric];
